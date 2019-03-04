@@ -11,12 +11,7 @@ pipeline {
                     sh "mvn -B -Dskiptests clean package"
                 }
        }
-     stage('Deploy') {
-          steps {
-                  
-                    sh 'cp /var/lib/jenkins/workspace/test_pipeline_project/target/ROOT.war /opt/tomcat/webapps/'
-                }
-       }
+     
      
       
         
