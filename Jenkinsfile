@@ -11,12 +11,7 @@ pipeline {
                     sh "mvn -B -Dskiptests clean package"
                 }
        }
-     stage('Deploy') {
-          steps {
-                  
-                    sh 'java -jar target/ROOT.jar'
-                }
-       }
+     
        
         
     }
