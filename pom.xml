@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.microsoft</groupId>
-	<artifactId>ROOT</artifactId>
+	<artifactId>azurehome</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
 	<name>Sample Spring App</name>
@@ -26,7 +26,7 @@
     </properties>
 
     <build>
-	<finalName>ROOT</finalName>
+	<finalName>azurehome</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
