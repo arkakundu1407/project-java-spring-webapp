@@ -11,6 +11,11 @@ pipeline {
                     sh "mvn -B -Dskiptests clean package"
                 }
        }
+    stage ('upload Artifactory') {
+      steps {
+      sh 'curl -X PUT -u admin:password -T target/azurehome.war "http://13.71.122.102:8081/artifactory/example-repo-local/azurehome.war"'
+       }
+    }
      
      
       stage('Deploy') {
