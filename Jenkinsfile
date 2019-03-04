@@ -12,12 +12,7 @@ pipeline {
                 }
        }
      
-      stage('Deploy') {
-          steps {
-                  
-                    cp /var/lib/jenkins/workspace/test_pipeline_project/target/ROOT.war /opt/tomcat/webapps/
-                }
-       }
+     
       
         
     }
