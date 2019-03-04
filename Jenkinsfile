@@ -16,7 +16,7 @@ pipeline {
       stage('Deploy') {
           steps {
                   
-                    sh 'cp /var/lib/jenkins/workspace/test_pipeline_project/target/azurehome.war /opt/tomcat/webapps/'
+                    sh 'cp /var/lib/jenkins/workspace/test_springboot_pipeline_project/target/azurehome.war /opt/tomcat/webapps/'
                 }
        }
         
